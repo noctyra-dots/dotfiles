@@ -2,7 +2,7 @@
 
 pkgname=noctyra-dotfiles-git
 pkgver=0
-pkgrel=1
+pkgrel=2
 pkgdesc="Noctyra dotfiles (git) - stow packages installed system-wide"
 arch=('any')
 url="https://github.com/noctyra-dots/dotfiles"
