@@ -1,8 +1,8 @@
 # Maintainer: <Cleboost> <clement.balarot@gmail.com>
 
 pkgname=noctyra-dotfiles-git
-pkgver=0
-pkgrel=2
+pkgver=r4.f3d1584-1
+pkgrel=0
 pkgdesc="Noctyra dotfiles (git) - stow packages installed system-wide"
 arch=('any')
 url="https://github.com/noctyra-dots/dotfiles"
@@ -18,7 +18,7 @@ source=("git+$url.git")
 sha256sums=('SKIP')
 
 pkgver() {
-    cd "$srcdir/noctalia-shell"
+    cd "$srcdir/dotfiles"
     git describe --long --tags | sed 's/\([^-]*-g\)/r\1/;s/-/./g;s/^v//'
 }
 
